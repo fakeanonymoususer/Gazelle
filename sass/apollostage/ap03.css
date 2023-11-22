@@ -1,6 +1,6 @@
+@charset "UTF-8";
 @namespace url(http://www.w3.org/1999/xhtml);
 @namespace svg url(http://www.w3.org/2000/svg);
-
 a:active,
 a:focus,
 button:active,
@@ -24,7 +24,7 @@ textarea:focus {
 
 .clear::after,
 .profileinfo::before {
-  content: '';
+  content: "";
 }
 
 #menu > ul a,
@@ -50,7 +50,7 @@ h6,
 input,
 select,
 textarea {
-  font-family: 'Open Sans', Helvetica, Arial, Tahoma, "Microsoft Yahei", sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, Tahoma, "Microsoft Yahei", sans-serif;
 }
 
 #header ul,
@@ -68,27 +68,25 @@ textarea {
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+  src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf) format("truetype");
 }
-
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
-  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSonF5uFdDttMLvmWuJdhhgs.ttf) format('truetype');
+  src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSonF5uFdDttMLvmWuJdhhgs.ttf) format("truetype");
 }
-
 * {
   box-sizing: inherit;
 }
 
 body {
-  background-color: $base-background-color;
+  background-color: #041813;
   box-sizing: border-box;
-  color: $base-text-color;
+  color: #b9bdbd;
   font-size: 12px;
   line-height: 1.6;
   margin: 0 8px;
@@ -113,7 +111,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-  color: $primary-accent-color;
+  color: #83e4a6;
 }
 
 h1,
@@ -132,20 +130,20 @@ h5 {
 }
 
 a {
-  color: $a-color;
+  color: #f0f0f0;
   text-decoration: none;
 }
 
 a:hover {
-  color: $a-hover-color;
+  color: #c7fada;
 }
 
 svg|a {
-  fill: $a-color;
+  fill: #f0f0f0;
 }
 
 svg|a:hover {
-  fill: $a-hover-color;
+  fill: #c7fada;
 }
 
 b,
@@ -174,14 +172,14 @@ li:last-child {
 }
 
 blockquote {
-  background-color: $blockquote-background-color;
+  background-color: #33363d;
   border: 1px dashed rgba(255, 255, 255, 0.25);
   margin: 12px;
   padding: 12px;
 }
 
 ::selection {
-  background-color: $selection-background-color;
+  background-color: rgba(105, 217, 146, 0.6);
   color: #fff;
 }
 
@@ -192,7 +190,7 @@ form input {
 table,
 table .rowa:nth-child(even),
 table .rowb:nth-child(even) {
-  background-color: $table-background-color;
+  background-color: #212A2D;
 }
 
 table {
@@ -203,12 +201,12 @@ table {
 
 table .rowa,
 table .rowb {
-  border-top: 2px solid $secondary-table-background-color;
+  border-top: 2px solid #262e27;
 }
 
 table .rowa:nth-child(odd),
 table .rowb:nth-child(odd) {
-  background-color: $input-background-color;
+  background-color: #252F32;
 }
 
 table ul.options_list {
@@ -218,7 +216,7 @@ table ul.options_list {
 
 .colhead,
 .colhead_dark {
-  background-color: $input-background-color;
+  background-color: #252F32;
   line-height: 18px;
 }
 
@@ -253,11 +251,11 @@ td:last-child {
 }
 
 form {
-  background-color: $form-background-color;
+  background-color: #1B2426;
 }
 
 form table td.label {
-  color: $footer-color;
+  color: #959a9e;
   padding-top: 9px;
   font-weight: 600;
   text-align: right;
@@ -274,10 +272,10 @@ textarea {
 button,
 input[type=button],
 input[type=submit] {
-  background: linear-gradient($a-color, #b8b8b8);
+  background: linear-gradient(#f0f0f0, #b8b8b8);
   border: none;
   border-radius: 1.5px;
-  color: $input-background-color;
+  color: #252F32;
   cursor: pointer;
   font-weight: 600;
   height: 32px;
@@ -287,7 +285,7 @@ input[type=submit] {
 button:active,
 input[type=button]:active,
 input[type=submit]:active {
-  background: linear-gradient(#b8b8b8, $a-color);
+  background: linear-gradient(#b8b8b8, #f0f0f0);
 }
 
 input[type=email],
@@ -296,7 +294,7 @@ input[type=text],
 input[type=search],
 select,
 textarea {
-  background: $input-background-color;
+  background: #252F32;
   border: 1px solid rgba(255, 255, 255, 0.08);
   color: #c6c9c9;
   height: 32px;
@@ -310,7 +308,7 @@ input[type=search]:focus,
 select:focus,
 textarea:focus {
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: $a-color;
+  color: #f0f0f0;
 }
 
 textarea {
@@ -366,7 +364,7 @@ span.size10 {
 }
 
 strong.important_text {
-  color: $ratio-red-color;
+  color: #e85050;
 }
 
 strong.important_text_alt {
@@ -381,7 +379,7 @@ strong.important_text_alt {
 .r02,
 .r03,
 .warning {
-  color: $ratio-red-color;
+  color: #e85050;
 }
 
 .r04,
@@ -390,7 +388,7 @@ strong.important_text_alt {
 .r07,
 .r08,
 .r09 {
-  color: $ratio-yellow-color;
+  color: #e3ba65;
 }
 
 .r10,
@@ -416,7 +414,7 @@ strong.important_text_alt {
 .vote_artist_down,
 .vote_tag_down {
   font-weight: bolder;
-  color: $ratio-red-color;
+  color: #e85050;
 }
 
 #wrapper {
@@ -437,7 +435,7 @@ strong.important_text_alt {
 
 .box,
 .box2 {
-  background-color: $form-background-color;
+  background-color: #1B2426;
   margin-bottom: 8px;
   margin-top: 8px;
 }
@@ -448,7 +446,7 @@ table.box2 {
 }
 
 .head {
-  background-color: $input-background-color;
+  background-color: #252F32;
   line-height: 18px;
 }
 
@@ -469,7 +467,7 @@ table.box2 {
 }
 
 .autocomplete-suggestions {
-  background-color: $a-color;
+  background-color: #f0f0f0;
   border: none;
   color: #26282e;
   margin-top: 4px;
@@ -481,7 +479,7 @@ table.box2 {
 }
 
 .autocomplete-suggestions .autocomplete-suggestion.autocomplete-selected {
-  background-color: $a-hover-color;
+  background-color: #c7fada;
 }
 
 .autocomplete-suggestions .autocomplete-suggestion strong {
@@ -489,7 +487,7 @@ table.box2 {
 }
 
 .forum_post.forum_unread {
-  border-top: 2px solid $a-hover-color;
+  border-top: 2px solid #c7fada;
 }
 
 .forum_post .avatar {
@@ -516,7 +514,6 @@ table.box2 {
     max-width: 720px;
   }
 }
-
 .forum_index h4,
 .forum_list h4 {
   font-size: 12px;
@@ -527,8 +524,8 @@ table.box2 {
   margin-top: 24px;
 }
 
-.forum_index td[style*='width: 2%'],
-.forum_list td[style*='width: 2%'] {
+.forum_index td[style*="width: 2%"],
+.forum_list td[style*="width: 2%"] {
   width: 24px !important;
 }
 
@@ -537,48 +534,49 @@ table.box2 {
 }
 
 .last_read ::before {
-  content: '➟';
+  content: "➟";
   display: inline-block;
 }
 
 #userinfo_minor::before,
 .linkbox br {
-  content: '';
+  content: "";
 }
+
 #nav_logchecker {
   display: block;
 }
 
 .read {
-  background: $read-icon center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/document.svg") center no-repeat;
 }
 
 .unread {
-  background: $unread-icon center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/document-round.svg") center no-repeat;
 }
 
 .read_locked {
-  background: $read-locked-icon center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/lock.svg") center no-repeat;
 }
 
 .unread_locked {
-  background: $unread-locked-icon center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/lock-round.svg") center no-repeat;
 }
 
 .read_sticky {
-  background: $read-sticky-icon center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/pin.svg") center no-repeat;
 }
 
 .unread_sticky {
-  background: $unread-sticky-icon center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/pin-round.svg") center no-repeat;
 }
 
 .read_locked_sticky {
-  background: $read-locked-sticky-icon center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/pin-and-lock.svg") center no-repeat;
 }
 
 .unread_locked_sticky {
-  background: $unread-locked-sticky-icon center no-repeat;
+  background: url("https://wally-crunk.github.io/ike/pin-and-lock-round.svg") center no-repeat;
 }
 
 #header,
@@ -604,7 +602,7 @@ table.box2 {
 
 #logo a,
 #extra5 {
-  background: $ops-lockup-icon right no-repeat;
+  background: url("https://wally-crunk.github.io/ike/ops-lockup.svg") right no-repeat;
 }
 
 #logo > a {
@@ -639,7 +637,7 @@ table.box2 {
 #menu > ul a:hover,
 #userinfo_minor:hover a:hover,
 #userinfo_username:hover a:hover {
-  background-color: $a-hover-color;
+  background-color: #c7fada;
 }
 
 #nav_index {
@@ -696,7 +694,7 @@ table.box2 {
 
 #searchbars > ul {
   align-items: center;
-  background-color: $input-background-color;
+  background-color: #252F32;
   display: flex;
   display: -ms-flexbox;
   -ms-flex-align: center;
@@ -715,44 +713,44 @@ table.box2 {
 }
 
 #searchbars > ul input {
-  background-color: $form-background-color;
+  background-color: #1B2426;
   width: 100%;
 }
 
 #menu li:nth-child(2) {
-  background-color: $menu-li-second-child-background-color;
+  background-color: #0a3a2e;
 }
 
 #menu li:nth-child(3) {
-  background-color: $menu-li-third-child-background-color;
+  background-color: #0c4a3b;
 }
 
 #menu li:nth-child(4) {
-  background-color: $menu-li-fourth-child-background-color;
+  background-color: #0f5b48;
 }
 
 #menu li:nth-child(5) {
-  background-color: $menu-li-fifth-child-background-color;
+  background-color: #126c56;
 }
 
 #menu li:nth-child(6) {
-  background-color: $menu-li-sixth-child-background-color;
+  background-color: #157d63;
 }
 
 #menu li:nth-child(7) {
-  background-color: $menu-li-seventh-child-background-color;
+  background-color: #188e70;
 }
 
 #menu li:nth-child(8) {
-  background-color: $header-background-color;
+  background-color: #1a9f7d;
 }
 
 #menu li:nth-child(9) {
-  background-color: $menu-li-ninth-child-background-color;
+  background-color: #1daf8b;
 }
 
 #userinfo_username {
-  background-color: $userinfo-username-color;
+  background-color: #20c098;
   right: 50px;
 }
 
@@ -767,7 +765,7 @@ table.box2 {
 }
 
 .linkbox > strong {
-  color: $primary-accent-color;
+  color: #83e4a6;
 }
 
 #footer,
@@ -816,14 +814,14 @@ table.box2 {
 
 #noty_bottomRight_layout_container > li {
   background: 0 0 !important;
-  border: 2px solid $a-color !important;
+  border: 2px solid #f0f0f0 !important;
   border-radius: 0 !important;
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.25) !important;
 }
 
 #noty_bottomRight_layout_container .noty_message {
-  background-color: $a-color !important;
-  color: $base-background-color !important;
+  background-color: #f0f0f0 !important;
+  color: #041813 !important;
   font-weight: 700;
   padding: 0 !important;
 }
@@ -834,17 +832,17 @@ table.box2 {
 }
 
 #noty_bottomRight_layout_container .noty_buttons {
-  background-color: $form-background-color !important;
+  background-color: #1B2426 !important;
   border: none !important;
   padding: 8px !important;
 }
 
 #noty_bottomRight_layout_container .noty_buttons a {
-  color: $a-color !important;
+  color: #f0f0f0 !important;
 }
 
 #noty_bottomRight_layout_container .noty_buttons a:hover {
-  color: $a-hover-color !important;
+  color: #c7fada !important;
 }
 
 #noty_bottomRight_layout_container .brackets {
@@ -880,9 +878,9 @@ table.box2 {
 }
 
 div#flip_view_1 div#similar-artist .name {
-  border: 1px solid $base-text-color;
+  border: 1px solid #b9bdbd;
   background: rgba(60, 60, 60, 0.7);
-  color: $base-text-color;
+  color: #b9bdbd;
   margin: 0;
   padding: 0 5px;
 }
@@ -922,7 +920,7 @@ div#flip_view_1 div#similar-artist .name {
 .box_artists .brackets::before,
 .box_tags .edit_tags_votes .brackets::after,
 .box_tags .edit_tags_votes .brackets::before {
-  content: '';
+  content: "";
   display: none;
 }
 
@@ -1000,11 +998,11 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table {
-  background-color: $secondary-table-background-color;
+  background-color: #262e27;
 }
 
 .torrent_table tr:not(.colhead):not(.colhead_dark) {
-  border-top: 2px solid $secondary-table-background-color;
+  border-top: 2px solid #262e27;
 }
 
 .torrent_table tr .number_column:not(:last-child) {
@@ -1012,16 +1010,16 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .torrent_table .group {
-  background-color: $input-background-color;
+  background-color: #252F32;
 }
 
 .group_torrent {
-  background-color: $form-background-color;
+  background-color: #1B2426;
 }
 
 .group_torrent.edition,
 .torrent {
-  background-color: $torrent-background-color;
+  background-color: #1F282B;
 }
 
 .torrentdetails .linkbox {
@@ -1050,18 +1048,18 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .tags a {
-  color: $footer-color;
+  color: #959a9e;
   font-size: 11px;
 }
 
 .tags a:hover {
-  color: $a-hover-color;
+  color: #c7fada;
 }
 
 .group_info > span:first-child,
 .group_torrent td:first-child > span,
 .torrent_links_block {
-  color: $footer-color;
+  color: #959a9e;
   float: right;
   margin-right: 4px;
 }
@@ -1118,8 +1116,8 @@ div#flip_view_1 div#similar-artist .name {
   margin-left: -8px;
 }
 
-.colhead td[width*='70%'],
-.colhead_dark td[width*='70%'] {
+.colhead td[width*="70%"],
+.colhead_dark td[width*="70%"] {
   width: 100%;
 }
 
@@ -1142,7 +1140,7 @@ div#flip_view_1 div#similar-artist .name {
 .cats_comics,
 .cats_ebooks,
 .cats_elearningvideos {
-  border-right: 2px solid $base-background-color;
+  border-right: 2px solid #041813;
   bottom: 0;
   left: auto;
   opacity: 0.35;
@@ -1185,14 +1183,14 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .tooltipster-default {
-  background-color: $base-background-color;
-  border: 0 solid $primary-accent-color;
+  background-color: #041813;
+  border: 0 solid #83e4a6;
   border-radius: 2.5px;
   color: #c6c9c9;
 }
 
 .tooltipster-default .tooltipster-content {
-  background-color: $base-background-color;
+  background-color: #041813;
   color: #c6c9c9;
   font-size: 12px;
   line-height: 1.4;
@@ -1200,14 +1198,14 @@ div#flip_view_1 div#similar-artist .name {
 }
 
 .tooltipster-default .tooltipster-content a {
-  background-color: $base-background-color;
+  background-color: #041813;
   color: #c6c9c9;
   font-weight: 600;
 }
 
 .alertbar,
 .tooltipster-default .tooltipster-content a:hover {
-  color: $primary-accent-color;
+  color: #83e4a6;
 }
 
 #content .header > h1,
@@ -1241,7 +1239,7 @@ ul.collage_images li a img {
 }
 
 ul.collage_images li::before {
-  content: '';
+  content: "";
   float: left;
   padding-top: 100%;
 }
@@ -1271,7 +1269,7 @@ ul.collage_images li a > span {
 }
 
 .recent tr:not(.colhead):not(.colhead_dark) > td::before {
-  content: '';
+  content: "";
   float: left;
   padding-top: 100%;
 }
@@ -1298,7 +1296,7 @@ ul.collage_images li a > span {
 
 #userform #settings_sections h2 a,
 .rule_short {
-  color: $a-color;
+  color: #f0f0f0;
 }
 
 .poll li {
@@ -1306,14 +1304,14 @@ ul.collage_images li a > span {
 }
 
 .poll .graph {
-  background-color: $poll-background-color;
+  background-color: rgba(131, 228, 166, 0.1);
   display: block;
   height: 8px;
   margin-bottom: 12px;
 }
 
 .poll .graph span {
-  background-color: $primary-accent-color;
+  background-color: #83e4a6;
   display: block;
   float: left;
   height: 8px;
@@ -1359,7 +1357,7 @@ ul.collage_images li a > span {
 
 #footer {
   width: 100%;
-  color: $footer-color;
+  color: #959a9e;
   font-synthesis: 11px;
   margin: 32px auto 16px;
 }
@@ -1374,7 +1372,7 @@ ul.collage_images li a > span {
 }
 
 #discog_table > div.box.center {
-  background-color: $input-background-color;
+  background-color: #252F32;
   padding: 12px;
   text-align: left;
 }
@@ -1397,16 +1395,16 @@ ul.collage_images li a > span {
 }
 
 #musicbrainz_popup {
-  color: $base-background-color;
+  color: #041813;
   font-weight: 600;
 }
 
 #musicbrainz_popup a {
-  color: $base-background-color;
+  color: #041813;
 }
 
 #musicbrainz_popup a:hover {
-  color: $primary-accent-color;
+  color: #83e4a6;
 }
 
 #musicbrainz_popup .brackets {
@@ -1460,7 +1458,7 @@ ul.collage_images li a > span {
   height: auto !important;
 }
 
-#user .box > .head span[style='float: left;']:first-child {
+#user .box > .head span[style="float: left;"]:first-child {
   float: none !important;
 }
 
@@ -1480,7 +1478,7 @@ ul.collage_images li a > span {
 }
 
 #userform #settings_sections h2 a:hover {
-  color: $a-hover-color;
+  color: #c7fada;
 }
 
 #userform #settings_sections input {
@@ -1492,7 +1490,7 @@ ul.collage_images li a > span {
 }
 
 #dnulist tr:not(.colhead):not(.colhead_dark):nth-child(odd) {
-  background-color: $blockquote-background-color;
+  background-color: #33363d;
 }
 
 #menu > ul a:hover,
@@ -1528,7 +1526,7 @@ ul.collage_images li a > span {
 #collages.collage_table .colhead td:last-child,
 #personal_collages .colhead td:last-child,
 .filelist_table .colhead_dark td:last-child,
-.forum_index .colhead td[style*='width: 7%'] {
+.forum_index .colhead td[style*="width: 7%"] {
   text-align: right;
 }
 
@@ -1552,20 +1550,20 @@ ul.collage_images li a > span {
 
 .box table:not(.layout),
 .box2 table:not(.layout) {
-  border: 2px solid $secondary-table-background-color;
+  border: 2px solid #262e27;
   margin: 8px 0;
 }
 
-span[style*='color: green'] {
-  color: $span-green-color !important;
+span[style*="color: green"] {
+  color: #4fb650 !important;
 }
 
-span[style*='color: red'] {
-  color: $ratio-red-color !important;
+span[style*="color: red"] {
+  color: #e85050 !important;
 }
 
-span[style*='color: blue'] {
-  color: $span-blue-color !important;
+span[style*="color: blue"] {
+  color: #4f50e9 !important;
 }
 
 .filelist_table td,
@@ -1583,7 +1581,7 @@ blockquote {
 .reportinfo_table,
 .torrentdetails,
 blockquote {
-  background-color: $input-background-color;
+  background-color: #252F32;
 }
 
 #bookmarks #torrent_table tr:not(.colhead):not(.colhead_dark) td:nth-child(2) {
@@ -1616,7 +1614,7 @@ blockquote {
 }
 
 #userinfo_minor:hover::before {
-  background: $ops-square-icon 21px 20px no-repeat;
+  background: url("https://wally-crunk.github.io/ike/ops-loop.svg") 21px 20px no-repeat;
 }
 
 #menu > ul a:hover {
@@ -1625,7 +1623,7 @@ blockquote {
 
 #userinfo_minor:hover a,
 #userinfo_username:hover a {
-  color: $a-color;
+  color: #f0f0f0;
 }
 
 #searchbars .search_form {
@@ -1639,12 +1637,13 @@ blockquote {
 }
 
 #searchbars .search_form input:focus {
-  background: $secondary-table-background-color;
+  background: #262e27;
 }
 
 .sidebar {
   order: 5;
 }
+
 .thin:last-child {
   display: flex;
   flex-wrap: wrap;
@@ -1656,7 +1655,6 @@ blockquote {
  * So, instead, we set width: 100% on everything, which is basically the same as column
  * flex, and then just override that to be default if there is a sidebar.
  */
-
 .thin:not(.linkbox) > :not(.two_columns) {
   width: 100%;
 }
@@ -1698,7 +1696,6 @@ blockquote {
  * - they have much more uniform HTML across different places (comments and
  * "real" forum), so classes to simplify CSS aren't necessary
  */
-
 /*
  * Portrait phones, and sometimes landscape
  * TODO: currently, responsive is optimized for either desktop or portrait phone
@@ -1708,29 +1705,24 @@ blockquote {
  * then tweaked a bit. Ideally, before that happens, the whole styling system
  * should be made to use a CSS preprocessor so that we can have reusable styles
  */
-
 /* this query is mostly copied from what used to be above
  * despite the fact that this exists, there are still many
  * rules above that are overridden by media queries, rather
  * than being put here like they should be
  */
-
 @media (min-width: 480px) {
   .thin:last-child > :not(.two_columns) {
     margin: 4px;
   }
-
   #nav_donate .tooltip::after {
     color: red;
-    content: '❤️';
+    content: "❤️";
     font-size: 75%;
     vertical-align: top;
   }
-
   #nav_staff {
     font-weight: 400;
   }
-
   #menu > ul > #nav_staff {
     display: inline;
     font-size: 13px;
@@ -1738,25 +1730,21 @@ blockquote {
     right: 8px;
     top: 29px;
   }
-
   #menu > ul > #nav_staff > a {
     line-height: 1.6;
     padding: 0;
   }
-
   #menu > ul > #nav_staff > a:hover {
     background-color: transparent;
-    color: $a-hover-color;
+    color: #c7fada;
   }
-
   #userinfo_minor::before {
-    background: $arrow-down-icon 21px 20px no-repeat;
+    background: url("https://wally-crunk.github.io/ike/chevrons-bottom.svg") 21px 20px no-repeat;
     display: block;
     height: 50px;
     line-height: 50px;
     width: 50px;
   }
-
   #userinfo_minor a,
   #userinfo_username a {
     display: none;
@@ -1764,113 +1752,91 @@ blockquote {
     padding: 0 8px;
     width: 150px;
   }
-
   #userinfo_minor:hover::before {
     margin-left: 100px;
   }
-
   #userinfo_minor {
-    background-color: $userinfo-minor-color;
+    background-color: #23d1a5;
     border-radius: 0 5px 0 0;
     right: 0;
   }
-
   #userinfo_minor,
   #userinfo_username {
     position: absolute;
     z-index: 900;
   }
-
   #userinfo_minor:hover,
   #userinfo_username:hover {
     z-index: 800;
   }
-
   #userinfo_username:hover {
     border-radius: 0 10px 0 0;
     right: 0;
   }
-
   #userinfo_minor:hover {
-    background-color: $userinfo-minor-hover-background-color;
+    background-color: #189273;
   }
-
   #userinfo_username:hover {
-    background-color: $userinfo-username-hover-background-color;
+    background-color: #16866a;
   }
-
   .settings_sidebar {
     margin-left: 8px;
   }
-
   #userform #settings_sections {
     width: 240px;
   }
 }
-
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  #inbox input[type="submit"] {
+  #inbox input[type=submit] {
     font-size: 10px;
     padding: 4px;
   }
-
   #forums input {
     font-size: 10px;
     padding: 4px;
   }
 }
-
 @media (max-width: 480px) {
   .m_hidden {
     display: none !important;
   }
-
   /* override from earlier, it makes shit weird */
   td:first-child {
     padding-left: 6px;
   }
-
   /* BEGIN site layout */
   #wrapper {
     padding-top: 36px;
   }
-
   .thin {
     flex-direction: column;
     margin: auto;
   }
-
   /* the specificity goes up to 11 */
   html > body div.thin > * {
     width: 100%;
   }
-
   form table td.label {
     width: 5rem;
   }
-
   .linkbox {
     text-align: left;
     width: 90%;
   }
-
   html body .scale_image,
   #stats img {
     max-width: 100%;
   }
   /* END site layout */
-
   /* BEGIN notifications */
   .i-am-new {
     width: calc(100% - 48px) !important;
   }
-
   .i-am-new li {
     width: 100% !important;
   }
   /* END notifications */
-
   /* BEGIN user settings */
   #user #userform {
     align-items: stretch;
@@ -1879,18 +1845,15 @@ blockquote {
     margin-left: 0;
     width: 100%;
   }
-
   .settings_sidebar {
     flex: unset;
     order: -1;
   }
-
   /* tired of specificity :( */
   #settings_sections {
     position: static !important;
   }
   /* END user settings */
-
   /* BEGIN forms */
   input[type=search],
   input[type=text],
@@ -1899,17 +1862,14 @@ blockquote {
   select {
     width: 100%;
   }
-
   #upload .box {
     width: 100% !important;
   }
-
   .cat_list tr {
     display: flex;
     flex-wrap: wrap;
   }
   /* END forms */
-
   /* BEGIN general tables */
   .m_table tbody,
   .m_table .colhead,
@@ -1919,58 +1879,47 @@ blockquote {
     flex-wrap: wrap;
     width: 100%;
   }
-
   .m_table tbody {
     align-items: stretch;
     flex-direction: column;
   }
   /* END general tables */
-
   /* BEGIN table headers */
   .m_table .colhead,
   .m_table .colhead_dark {
     flex-wrap: nowrap;
   }
-
   .m_table .colhead td:not(.m_th_right):not(.m_th_left),
   .m_table .colhead_dark td:not(.m_th_right):not(.m_th_left) {
     display: none;
   }
-
   .m_table .colhead td,
   .m_table .colhead_dark td {
     width: auto !important;
   }
-
   .m_th_left {
     visibility: hidden;
   }
-
   .m_th_left_collapsable {
     padding-left: 34px;
   }
-
   .m_th_left::before {
     color: white;
-    content: 'Info';
+    content: "Info";
     visibility: visible;
   }
-
   /* ghetto :first-of-class */
   .m_th_right {
     margin-left: auto;
   }
-
   .m_th_right + .m_th_right {
     margin-left: unset;
   }
-
   .m_th_right + .m_th_right + .m_th_right {
     margin-left: unset;
     padding-right: 12px;
   }
   /* END table headers */
-
   /* BEGIN table bodies */
   .m_table tr:not(.hidden):not(.colhead):not(.colhead_dark) {
     display: block;
@@ -1980,18 +1929,15 @@ blockquote {
     position: relative;
     width: 100%;
   }
-
   .m_table td {
     display: block;
   }
-
   .m_table tr:not(.colhead):not(.colhead_dark) td:not(.m_td_left):not(.m_td_right) {
     padding-bottom: 0;
     padding-top: 0;
     text-align: left;
     width: 81%;
   }
-
   td.m_td_left {
     align-items: center;
     display: flex;
@@ -2000,7 +1946,6 @@ blockquote {
     width: 34px;
   }
   /* END table bodies */
-
   /* BEGIN right-aligned numerical stats */
   .m_td_right {
     margin: 0;
@@ -2011,65 +1956,52 @@ blockquote {
     text-align: right;
     top: 0.2rem;
   }
-
   /* specificity override will occur for third one, so this is fine */
   .m_td_right + .m_td_right {
     top: 1.6em;
   }
-
   .m_td_right + .m_td_right + .m_td_right {
     top: 3em;
   }
   /* END right-aligned numerical stats */
-
   /* BEGIN torrent table */
   .torrent_table * {
     float: none;
   }
-
   .torrent_table .remove_bookmark a,
   .torrent_table .add_bookmark a {
     float: none !important;
   }
-
   .torrent_table .cats_col:not(.m_cats_col) {
     display: none;
   }
-
   /* on mobile, it wraps even on normal words, so better like this */
   /* TODO: how to handle super long-words */
   .group .group_info,
   .torrent .group_info {
     word-break: inherit;
   }
-
   .torrent .group_info span:first-child {
     order: 10;
   }
-
   .group_info .tags {
     order: 20;
     width: 100%;
   }
-
   #wrapper .m_table .edition {
     padding-top: 0;
     padding-bottom: 0;
   }
-
   .edition_info {
     padding: 4px 12px 4px 32px !important;
   }
-
   .group_torrent .edition_info a {
     line-height: 23px;
   }
-
   .edition_1 {
     /* for the right aligned numbers */
     min-height: 5em;
   }
-
   .td_snatched.m_td_right,
   .td_seeders.m_td_right,
   .td_leechers.m_td_right {
@@ -2077,44 +2009,37 @@ blockquote {
     right: 4px;
     text-align: left;
   }
-
   .td_snatched.m_td_right::before,
   .td_seeders.m_td_right::before,
   .td_leechers.m_td_right::before {
-    background: left / 10px no-repeat $number-snatches-icon;
+    background: left/10px no-repeat url("https://wally-crunk.github.io/ike/arrow-snatches.svg");
     color: #fff;
-    content: ':';
+    content: ":";
     filter: brightness(80%);
     position: absolute;
     right: calc(100% + 2px);
     text-align: right;
     width: 14px;
   }
-
   .td_seeders.m_td_right::before {
-    background-image: $number-seeders-icon;
+    background-image: url("https://wally-crunk.github.io/ike/arrow-up-round.svg");
   }
-
   .td_leechers.m_td_right::before {
-    background-image: $number-leechers-icon;
+    background-image: url("https://wally-crunk.github.io/ike/arrow-down-round.svg");
   }
-
   .m_table.checkboxes td:first-child {
     display: block;
   }
-
   /* BEGIN expanded torrent group */
   .group_torrent:not(.edition):not(.hidden) {
     display: flex;
     flex-direction: column;
     padding: 5px 0 0 22px;
   }
-
   /* it would be nice to use flex for all group_torrents, but we can't de display:flex
    * on any old table cell. It only works here because our trs aren't using the normal
    * table display anyways.
    */
-
   .torrent_table .group_torrent:not(.edition) td:first-child {
     display: flex;
     /* for those ones with a million buttons */
@@ -2122,180 +2047,141 @@ blockquote {
     padding: 0;
     width: 80%;
   }
-
   .torrent_table .group_torrent:not(.edition) td:first-child span {
     order: 5;
     padding-left: 6px;
   }
-
   .td_file_count::before {
-    content: 'Files: ';
+    content: "Files: ";
   }
-
   .torrent_table .group_torrent td:nth-child(4) {
     padding-bottom: 5px;
     text-align: left;
   }
-
   /* artist view page */
   #torrents_album .edition_1 td:nth-child(n+2) {
     padding-left: 15px;
   }
   /* END expanded torrent group */
-
   /* BEGIN top10 */
   /* 4 and 5 in colhead are hidden anyways */
   #top10 .td_size::before {
-    content: 'Size: ';
+    content: "Size: ";
   }
-
   .td_data::before {
-    content: 'Transferred: ';
+    content: "Transferred: ";
   }
   /* END top10 */
   /* END torrent table */
-
   /* BEGIN invite table */
   .invite_table tr:not(.colhead) td:nth-child(3)::before {
-    content: 'Joined: ';
+    content: "Joined: ";
   }
-
   .invite_table tr:not(.colhead) td:nth-child(4)::before {
-    content: 'Seen: ';
+    content: "Seen: ";
   }
-
   .td_dl.m_td_right::before {
-    content: 'D: ';
+    content: "D: ";
   }
-
   .td_up.m_td_right::before {
-    content: 'U: ';
+    content: "U: ";
   }
-
   .td_ratio.m_td_right::before {
-    content: 'R: ';
+    content: "R: ";
   }
   /* END invite table */
-
   /* BEGIN collage table */
   table.m_table.collage_table tr:not(.colhead):not(.colhead) {
     display: flex;
     flex-direction: column;
   }
-
   .m_table .td_collage_category::before {
-    content: 'Category: ';
+    content: "Category: ";
   }
-
   .m_table .td_collage_category {
     order: 2;
     padding-top: 0;
   }
-
   .collage_table .td_info {
     padding-bottom: 0;
   }
-
   .collage_table .td_updated::before {
-    content: 'Updated: ';
+    content: "Updated: ";
   }
-
   .collage_table .td_updated {
     order: 3;
   }
-
   .collage_table .td_author::before {
-    content: 'Author: ';
+    content: "Author: ";
   }
-
   .collage_table .td_author {
     order: 3;
   }
-
   .collage_table .td_torrent_count::before {
-    content: 'T: ';
+    content: "T: ";
   }
-
   .collage_table .td_subscribers::before {
-    content: 'S: ';
+    content: "S: ";
   }
   /* END collage table */
-
   /* BEGIN requests */
   /* TODO: still show the time the request was filled without taking up too much space */
-
   #requests .request_table tr:not(.colhead) td:nth-child(n+2) {
     padding: 0 6px;
   }
-
   #requests .request_table tr:not(.colhead) td:nth-child(5)::before {
-    content: 'Filler: ';
+    content: "Filler: ";
   }
-
   #requests .request_table tr:not(.colhead) td:nth-child(6)::before {
-    content: 'Requester: ';
+    content: "Requester: ";
   }
-
   #requests .request_table tr:not(.colhead) td:nth-child(6) {
     padding: 0 6px;
   }
-
   #requests .request_table tr:not(.colhead) td:nth-child(7)::before {
-    content: 'Added: ';
+    content: "Added: ";
   }
-
   #requests .request_table tr:not(.colhead) td:nth-child(8)::before {
-    content: 'Last Vote: ';
+    content: "Last Vote: ";
   }
-
   #requests .request_table tr:not(.colhead) td:nth-child(8) {
     padding-bottom: 4px;
   }
   /* END requests */
-
   /* BEGIN forums */
   /* BEGIN forum index */
   .forum_index .last_read {
     float: none !important;
   }
-
   .forum_index .last_topic,
   .forum_index .last_poster {
     float: none !important;
   }
-
   .forum_index .last_topic {
     display: block;
   }
-
   #wrapper .td_read {
     float: left;
     height: 12px;
     margin: 3px 5px 0 5px;
     width: 11px;
   }
-
   .td_topic_count.m_td_right::before {
-    content: 'T: ';
+    content: "T: ";
   }
-
   .td_post_count.m_td_right::before {
-    content: 'P: ';
+    content: "P: ";
   }
-
   .td_author::before {
-    content: 'Author: ';
+    content: "Author: ";
   }
-
   .td_replies.m_td_right::before {
-    content: 'R: ';
+    content: "R: ";
   }
   /* END forum index */
-
   /* BEGIN forum table structure */
   /* this is copied from general tables. We put it here in case that changes
    in ways specific for tabular data */
-
   .forum_post tbody {
     align-items: stretch;
     display: flex;
@@ -2303,14 +2189,12 @@ blockquote {
     flex-wrap: wrap;
     width: 100%;
   }
-
   .forum_post tr:not(.colhead_dark):not(.hidden) {
     display: block;
     position: relative;
     width: 100%;
   }
   /* END forum table structure */
-
   /* BEGIN forum headers */
   /* remove dashes from forum post headers */
   .forum_post tr.colhead_dark {
@@ -2318,25 +2202,20 @@ blockquote {
     min-height: 50px;
     padding-left: 54px;
   }
-
   .forum_post tr.colhead_dark span,
   .forum_post tr.colhead_dark strong {
     color: #c6c9c9;
   }
-
   .forum_post tr.colhead_dark div {
     display: inline;
   }
-
   .forum_post .time::after {
-    content: '\a';
+    content: "\a";
     white-space: pre;
   }
-
   .forum_post tr.colhead_dark div:nth-child(2) {
     padding-left: 8px;
   }
-
   .forum_post .avatar {
     left: 5px;
     position: absolute;
@@ -2344,7 +2223,6 @@ blockquote {
     width: 0;
     word-break: break-all;
   }
-
   .forum_post .avatar img {
     max-height: 50px !important;
     max-width: 50px !important;
@@ -2354,20 +2232,17 @@ blockquote {
   }
   /* END forum headers */
   /* END forums */
-
   /* BEGIN rules */
   #rules .m_th_left::before {
-    content: 'Rules';
+    content: "Rules";
   }
-
   .rule_table .nobr {
     white-space: unset;
   }
   /* END rules */
-
   /* BEGIN site header */
   #header {
-    background: $header-background-color;
+    background: #1a9f7d;
     top: 0;
     height: 0;
     left: 0;
@@ -2379,24 +2254,23 @@ blockquote {
     padding-bottom: 32px;
     opacity: 0;
   }
-
-  #header:hover{
-      height: 43%;
-      opacity: 1;
-      transition: height 0.2s;
+  #header:hover {
+    height: 43%;
+    opacity: 1;
+    transition: height 0.2s;
   }
-  #extra1{ 
-      position: fixed;
-      top: 5px;
-      left: calc(50% - 12.5px);
-      display: block;
-      opacity: 1!important;
-      width: 25px;
-      height: 25px;
-      background-image: url('https://i.postimg.cc/Tw47V1VN/arrow-down.gif');
-      background-size: contain;
-      z-index:500;
-      pointer-events: none;
+  #extra1 {
+    position: fixed;
+    top: 5px;
+    left: calc(50% - 12.5px);
+    display: block;
+    opacity: 1 !important;
+    width: 25px;
+    height: 25px;
+    background-image: url("https://i.postimg.cc/Tw47V1VN/arrow-down.gif");
+    background-size: contain;
+    z-index: 500;
+    pointer-events: none;
   }
   /* BEGIN hamburger bar */
   #logo {
@@ -2410,69 +2284,60 @@ blockquote {
     width: 20%;
     z-index: 500;
   }
-
   #logo a {
     background-image: none;
     display: block;
     height: 32px;
     width: 100%;
   }
-
   #extra4,
   #extra5 {
-      height: 32px;
-      position: fixed;
-      top: 0
+    height: 32px;
+    position: fixed;
+    top: 0;
   }
   #extra5 {
-      background-image: $ops-lockup-icon; 
-      background-position: 0;
-      background-size: auto 24px;
-      background-repeat: no-repeat;
-      left: 4px;
-      pointer-events: none;
-      transform: translateZ(0);
-      width: 32px;
-      z-index: 400;
+    background-image: url("https://wally-crunk.github.io/ike/ops-lockup.svg");
+    background-position: 0;
+    background-size: auto 24px;
+    background-repeat: no-repeat;
+    left: 4px;
+    pointer-events: none;
+    transform: translateZ(0);
+    width: 32px;
+    z-index: 400;
   }
   #extra4 {
-      background: $header-background-color;
-      border-radius: 0 0 4px 4px;
-      display: block;
-      right: 0;
-      width: 100vw
+    background: #1a9f7d;
+    border-radius: 0 0 4px 4px;
+    display: block;
+    right: 0;
+    width: 100vw;
   }
-
-  #extra4,#extra5 {
-      height: 32px;
-      position: fixed;
-      top: 0
+  #extra4, #extra5 {
+    height: 32px;
+    position: fixed;
+    top: 0;
   }
   /* END hamburger bar */
-
   #header {
     --row-height: 40px;
   }
-
   #header ul:not(#userinfo_major):not(#userinfo_stats) {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
   }
-
   #header ul:not(#userinfo_major):not(#userinfo_stats) li {
     margin: 0;
     width: 33.3%;
   }
-
   #header ul:not(#userinfo_major):not(#userinfo_stats) a {
     line-height: var(--row-height);
   }
-
   #alerts {
     display: none;
   }
-
   /* BEGIN searchboxes */
   #searchbars ul {
     bottom: 0;
@@ -2480,70 +2345,56 @@ blockquote {
     padding: 0 0 0 6px;
     position: absolute;
   }
-
   #searchbars li {
     height: var(--row-height);
   }
-
   #searchbars li:nth-child(-n+3) .search_form {
     margin: 6px 6px 3px 0;
   }
-
   #searchbars li:nth-child(n+4) .search_form {
     margin: 3px 6px 6px 0;
   }
-
   #header #searchbars input {
     height: calc(var(--row-height) - 9px);
   }
   /* END searchboxes */
-
   /* BEGIN userinfo */
   #userinfo {
     position: static;
   }
-
   #userinfo_major {
     right: 12px;
     top: calc(100% - var(--row-height) * 10 - 55px);
   }
-
   #userinfo_stats {
     color: white;
     line-height: 1.3;
     right: 12px;
     top: calc(100% - var(--row-height) * 10 - 38px);
   }
-
   #userinfo_stats span {
     white-space: nowrap;
   }
-
   #stats_ratio {
-    color: $a-color;
+    color: #f0f0f0;
   }
-
   #stats_ratio .tooltip {
     color: white;
   }
-
   #userinfo_username {
-    background: radial-gradient(circle at top left, $userinfo-background-color-1, $userinfo-background-color-2);
+    background: radial-gradient(circle at top left, rgba(34, 105, 110, 0.6862745098), #22696e);
     bottom: calc(var(--row-height) * 2);
     left: 0;
     position: absolute;
   }
-
   #nav_userclass {
     display: none;
   }
-
   #userinfo_minor {
-    background: radial-gradient(circle at top left, $userinfo-background-color-1, $userinfo-background-color-2);
+    background: radial-gradient(circle at top left, rgba(34, 105, 110, 0.6862745098), #22696e);
     bottom: calc(var(--row-height) * 3);
     position: absolute;
   }
-
   /* S P E C I F I C I T Y */
   html > body #userinfo_minor a,
   html > body #userinfo_username a {
@@ -2552,24 +2403,20 @@ blockquote {
     line-height: 50px;
     text-align: center;
   }
-
   #userinfo_username #nav_userinfo a {
     width: unset;
   }
   /* END userinfo */
-
   /* BEGIN browse links */
   #menu ul {
-    background: radial-gradient(circle at top left, #0999, #088);
+    background: radial-gradient(circle at top left, rgba(0, 153, 153, 0.6), #088);
     bottom: calc(var(--row-height) * 7);
     position: absolute;
   }
-
   #menu li {
     background: transparent !important;
   }
   /* END browse links */
-
   #extracb1 {
     display: block;
     height: 32px;
@@ -2581,33 +2428,29 @@ blockquote {
     width: 50vw;
     z-index: 999;
   }
-
   /* BEGIN checked */
   #extracb1:checked ~ #wrapper #header {
     transform: translateY(120%);
   }
-
   #extracb1:checked ~ #wrapper #logo {
     transform: none;
   }
-
   #extracb1:checked ~ #extra1 {
     transform: translateY(5px) rotate(45deg);
   }
-
   #extracb1:checked ~ #extra2 {
     opacity: 0;
   }
-
   #extracb1:checked ~ #extra3 {
     transform: translateY(-5px) rotate(-45deg);
   }
   /* END checked */
   /* END site header */
 }
-
 @media (max-width: 480px) and (max-height: 480px) {
   #header {
     --row-height: 35px;
   }
 }
+
+/*# sourceMappingURL=ap03.css.map */
