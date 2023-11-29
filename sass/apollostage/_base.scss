@@ -2380,12 +2380,13 @@ blockquote {
     opacity: 0;
   }
 
-  #header:hover{
-      height: 43%;
-      opacity: 1;
-      transition: height 0.2s;
+  #header:hover {
+    height: 80%;
+    opacity: .96;
+    transition: all 600ms cubic-bezier(1.000, 0.010, 0.300, 1.310);
   }
-  #extra1{ 
+  
+  extra1{ 
       position: fixed;
       top: 5px;
       left: calc(50% - 12.5px);
